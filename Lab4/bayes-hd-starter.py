@@ -103,8 +103,17 @@ for i in range(len(y_train)-1):
 lstfbs = []
 
 for i in range(len(lst)):
-    lstfbs.append(X_train[lst[i]])
-lstfbs.count()
+    a = X_train[i]
+    if a[5] == 0:
+        lstfbs.append(a)
+
+for i in range(len(lstfbs)):
+    print (i)
+
+for j in range(len(lst)):
+    print (j)
+
+print(i/j)
 # How many records do we have?
 num_samples = i
 print("Number of samples:", num_samples)
